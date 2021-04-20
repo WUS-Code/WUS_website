@@ -1,0 +1,60 @@
+
+.mySlides {display:none;}
+
+
+.publish-sec {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    clear: both;
+    float: left;
+}
+.publish-sec h2 {
+    display: block;
+    clear: both;
+    float: left;
+    width: 100%;font-size: 18px;
+    margin: 0 0 15px 0;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid #cdcdcd;
+}
+.publish-sec ul {
+    display: block;
+    clear: both;
+    float: left;
+    list-style: none;
+    padding: 0;
+}
+.publish-sec ul li {
+    display: block;
+    clear: both;
+    float: left;
+    list-style: none;
+    padding: 0 0 2px 0;
+    color: #334be9;
+    border: none;
+    vertical-align: middle;
+    padding-left: 25px;
+}
+.publish-sec ul li:before {
+    content: "";
+    background-image: url(images/blog/list-icon.jpg);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-left: -25px;
+}
+.publish-sec ul li a, .publish-sec ul li a:hover, .publish-sec ul li a:visited{
+    color: #334be9;
+}
+.publish-sec ul li .btitle {
+    color: #232323;
+    margin: 0 10px;
+    font-size: 12px;
+}
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,900);
+
