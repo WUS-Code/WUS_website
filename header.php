@@ -81,13 +81,13 @@ redirectTohttps();
 
 					<div class="collapse navbar-collapse navbar-right" id="mainmenu">
 						<ul class="nav navbar-nav">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#testimonial">Testimonial</a></li>
-							<li><a href="#solutions">Solutions</a></li>
-							<li><a href="#media">Media</a></li>
-							<li><a href="#team">Team</a></li>
-							<li><a href="#career">Career</a></li>
-							<li><a href="#Achievements">Achievements</a></li>					
+							<li><a href="index.php#home">Home</a></li>
+							<li><a href="index.php#testimonial">Testimonial</a></li>
+							<li><a href="index.php#solutions">Solutions</a></li>
+							<li><a href="index.php#media">Media</a></li>
+							<li><a href="index.php#team">Team</a></li>
+							<li><a href="index.php#career">Career</a></li>
+							<li><a href="index.php#Achievements">Achievements</a></li>					
 							<li><a href="pay.php">Pay</a></li>
 						</ul>
 					</div>

@@ -302,6 +302,25 @@
     <div class="images" style="border: #2584da; border-style: solid; padding: 10px;">
 	<div class="images-inner">
 
+	<div class="image-slide" >
+          <div class="image " >
+			 	<div class="hidden-xs hidden-sm col-md-5 col-md-offset-1 wow fadeInLeft "> 
+					 <img src="images/news/vaccination_Drive.jpg" alt="" style="width:300px;height:300px">
+				</div>
+				<div class="col-xs-12 col-md-6 ">
+			  		<h3>NYU Alum's start-up (WUS)-selected for Nasdaq Entrepreneurial Center's Milestone Makers – launched Covid19 – vaccination drive for Indian blue-collar workers</h3>
+						<p>On May 24th 2021, Dr Amar Patnaik, Member Parliament (India) Rajya Sabha, launched the vaccination drive and grievance redressal platform for Blue Collar workers through WUS Ap (Oriya version). WUS – an IIT Kanpur start-up –  is working for digital inclusion and digital skilling of blue-collar workers. Ms Nicola Corzine – Executive Director, Nasdaq Entrepreneurial Center, throughher recorded message, emphasized the importance of vaccination and how it will pave the path for a brighter future.</p>
+						<div class="flex-container-publish" style="float: left;">
+							<div>
+								<a href= "https://www.wrde.com/story/43960412/nyu-alums-startup-wusselected-for-nasdaq-entrepreneurial-centers-milestone-makers-launched-covid19vaccination-drive-for-indian-bluecollar-workers" target="_blank" style="color:blue">
+								<img src="images/news/WRDE.png" style="height:50px;width:100px"></a>
+							</div>
+						</div>	
+				</div>
+		
+			</div>
+		</div>
+
         <div class="image-slide" >
           <div class="image " >
 			 	<div class="hidden-xs hidden-sm col-md-5 col-md-offset-1 wow fadeInLeft "> 
@@ -346,7 +365,7 @@
 							</div>
                        	    <div>
 							   <a href="https://www.wrde.com/story/43382355/how-nyu-wagner-alum-is-empowering-indian-blue-collar-workers" target="_blank" style="color:blue">
-								<img src="images/news/WRDE.png." style ="height:50px;width:80px" ></a>
+								<img src="images/news/WRDE.png" style ="height:50px;width:80px" ></a>
 							</div>						
                         	<div>
 								<a href= "https://www.wicz.com/story/43382355/how-nyu-wagner-alum-is-empowering-indian-blue-collar-workers" target="_blank" style="color:blue">
@@ -383,6 +402,7 @@
           <label for="slide1" class="radio-btn"></label>
           <label for="slide2" class="radio-btn"></label>
 		  <label for="slide3" class="radio-btn"></label>
+		  <label for="slide4" class="radio-btn"></label>
         </div>
     </div>
 
