@@ -505,7 +505,7 @@
 					</div>
 					<div class="col-xs-12 col-sm-6 col-md-3 wow fadeInUp" data-wow-delay="0.8s">
 						<div class="single-team relative panel fix">
-							<img src="images/team/unnamed.png" alt="" style="height: 359px;">
+							<img src="images/team/arun.jpeg" alt="" style="height: 359px;">
 							<div class="team_details text-center">
 								<h5 class="text-uppercase">Arun Mathur</h5>
 								<p>Internal Audit & compliance</p>
