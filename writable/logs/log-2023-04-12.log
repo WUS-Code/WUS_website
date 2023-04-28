@@ -1,0 +1,1496 @@
+CRITICAL - 2023-04-12 06:08:43 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 06:08:49 --> Cannot call constructor
+in APPPATH\Controllers\Home.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 06:59:48 --> Class 'App\Controllers\JobModel' not found
+in APPPATH\Controllers\Home.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 07:01:16 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 07:01:16 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 07:07:00 --> Class 'CodeIgniter\Database\mssql\Connection' not found
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('mssql', 'CodeIgniter\\Database\\mssql\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Home.php(71): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 07:07:26 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 07:07:26 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 07:09:39 --> Class 'CodeIgniter\Database\odbc\Connection' not found
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('odbc', 'CodeIgniter\\Database\\odbc\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Home.php(71): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 07:10:13 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 07:10:13 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 07:10:29 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 07:10:29 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 07:10:45 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(true)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 07:10:45 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 07:12:16 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 07:12:16 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 07:18:57 --> Class 'App\Models\PDO' not found
+in APPPATH\Models\JobModel.php on line 10.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 07:21:30 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 07:21:30 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 07:23:53 --> Class 'CodeIgniter\Database\PDO\Connection' not found
+in SYSTEMPATH\Database\Database.php on line 139.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('PDO', 'CodeIgniter\\Database\\PDO\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH\Controllers\Home.php(71): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:06:20 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:06:20 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:06:38 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: The wait operation timed out.
+ SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:06:38 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: The wait operation timed out.
+ SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:06:54 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:06:54 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:07:10 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:07:10 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:15:33 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:15:33 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:15:49 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:15:49 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:16:12 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:16:12 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:17:01 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:17:01 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:18:10 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:18:10 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:18:26 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:18:26 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:19:28 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:19:28 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(12): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:22:33 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:22:33 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:25:45 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:25:45 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:52:11 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:52:11 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 10:59:24 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 10:59:24 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:02:39 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:02:39 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:04:19 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: The wait operation timed out.
+ SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:04:19 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: The wait operation timed out.
+ SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:05:11 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: The wait operation timed out.
+ SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 258 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:05:11 --> Unable to connect to the database.
+Main connection [SQLSRV]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: The wait operation timed out.
+ SQLSTATE: 08001, code: 258
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 258
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:10:14 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:10:14 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:10:30 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:10:30 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(10): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:21:53 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:21:53 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:22:09 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:22:09 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:23:54 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:23:54 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:26:55 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:26:55 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(21): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:37:07 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:37:07 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:39:06 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:39:06 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:44:09 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:44:09 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.
+ SQLSTATE: 08001, code: 10061
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 10061
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 11:46:00 --> syntax error, unexpected ','
+in APPPATH\Config\Database.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Config\\Database.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Database')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Database')
+ 4 SYSTEMPATH\Model.php(155): spl_autoload_call('Config\\Database')
+ 5 APPPATH\Controllers\Home.php(71): CodeIgniter\Model->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:46:33 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMas...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:46:33 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(24): CodeIgniter\Database\BaseConnection->query('CALL USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:54:39 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(14): CodeIgniter\Database\BaseConnection->query('Select * from m...')
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:54:39 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(14): CodeIgniter\Database\BaseConnection->query('Select * from mtblAllowance ')
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:55:21 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('USP_GetMasterDa...', Array)
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:55:21 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('USP_GetMasterData(?, ?)', [...])
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:56:31 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2 in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\SQLSRV\Connection.php:142
+Stack trace:
+#0 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\SQLSRV\Connection->connect(false)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\WUS-web\app\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * fr0m m...')
+#3 C:\xampp\htdocs\WUS-web\app\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+#4 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+#5 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2023-04-12 11:56:31 --> Unable to connect to the database.
+Main connection [sqlsrv]: [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  SQLSTATE: 08001, code: 2
+[Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired SQLSTATE: HYT00, code: 0
+[Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. SQLSTATE: 08001, code: 2
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\JobModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * fr0m mtblAllowance')
+ 3 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 11:58:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'fr0m'.
+CRITICAL - 2023-04-12 11:58:13 --> Invalid argument supplied for foreach()
+in APPPATH\Views\jobApplication.php on line 32.
+ 1 APPPATH\Views\jobApplication.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('jobApplication', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 11:58:59 --> Invalid argument supplied for foreach()
+in APPPATH\Views\jobApplication.php on line 32.
+ 1 APPPATH\Views\jobApplication.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('jobApplication', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:09:10 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:09:38 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:09:49 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:10:05 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:10:11 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:10:57 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:10:58 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+CRITICAL - 2023-04-12 12:13:02 --> Call to undefined method CodeIgniter\Database\SQLSRV\Connection::simple_query()
+in APPPATH\Models\JobModel.php on line 21.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:13:18 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Must declare the scalar variable "@MasterDataId".
+CRITICAL - 2023-04-12 12:13:18 --> Call to a member function fetch() on bool
+in APPPATH\Models\JobModel.php on line 25.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 12:14:12 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result()
+in APPPATH\Models\JobModel.php on line 23.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 12:14:30 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result()
+in APPPATH\Models\JobModel.php on line 23.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 12:15:06 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result()
+in APPPATH\Models\JobModel.php on line 23.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:19:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+CRITICAL - 2023-04-12 12:19:08 --> Call to a member function reult_array() on bool
+in APPPATH\Models\JobModel.php on line 23.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:19:15 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+CRITICAL - 2023-04-12 12:19:15 --> Call to a member function result_array() on bool
+in APPPATH\Models\JobModel.php on line 23.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 12:21:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\JobModel.php(21): CodeIgniter\Model->__get('msdb')
+ 4 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:21:38 --> Memory limit of 10240 KB exceeded for buffered query
+CRITICAL - 2023-04-12 12:22:22 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\JobModel.php(21): CodeIgniter\Model->__get('load')
+ 4 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 12:22:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\JobModel.php(21): CodeIgniter\Model->__get('load')
+ 4 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:23:19 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+CRITICAL - 2023-04-12 12:23:19 --> Call to a member function result() on bool
+in APPPATH\Models\JobModel.php on line 22.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:23:28 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 12:25:26 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:25:40 --> [Microsoft][ODBC Driver 17 for SQL Server]Syntax error, permission violation, or other nonspecific error
+CRITICAL - 2023-04-12 12:26:51 --> Call to undefined method CodeIgniter\Database\SQLSRV\Connection::call_function()
+in APPPATH\Models\JobModel.php on line 12.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 12:27:13 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near ')'.
+ERROR - 2023-04-12 12:27:13 --> [Microsoft][ODBC Driver 17 for SQL Server]Syntax error, permission violation, or other nonspecific error
+ERROR - 2023-04-12 12:27:52 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:28:04 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:28:12 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:28:25 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:28:33 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:28:44 --> [Microsoft][ODBC Driver 17 for SQL Server]COUNT field incorrect or syntax error
+ERROR - 2023-04-12 12:30:09 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 12:30:10 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 12:30:41 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'RegionLocation'.
+CRITICAL - 2023-04-12 13:45:51 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result()
+in APPPATH\Models\JobModel.php on line 15.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 13:48:21 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result_array()
+in APPPATH\Models\JobModel.php on line 14.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 13:50:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\JobModel.php(12): CodeIgniter\Model->__get('load')
+ 4 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 13:52:16 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result_array()
+in APPPATH\Models\JobModel.php on line 14.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 13:57:40 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::fetchAll()
+in APPPATH\Models\JobModel.php on line 12.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 13:58:18 --> syntax error, unexpected '}', expecting while (T_WHILE)
+in APPPATH\Models\JobModel.php on line 22.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(71): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 13:59:01 --> syntax error, unexpected 'return' (T_RETURN), expecting while (T_WHILE)
+in APPPATH\Models\JobModel.php on line 19.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(71): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 13:59:31 --> syntax error, unexpected '}', expecting while (T_WHILE)
+in APPPATH\Models\JobModel.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(71): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 14:02:32 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+ERROR - 2023-04-12 14:02:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='.
+CRITICAL - 2023-04-12 14:04:01 --> Call to undefined method CodeIgniter\Database\SQLSRV\Connection::select()
+in APPPATH\Models\JobModel.php on line 12.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 14:09:07 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 14:09:21 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 14:09:27 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'RegionLocation'.
+ERROR - 2023-04-12 14:09:34 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'RegionLocation'.
+CRITICAL - 2023-04-12 14:10:33 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(803): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\JobModel.php(12): CodeIgniter\Model->__get('MSSQL')
+ 4 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 16:01:25 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:01:26 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:01:29 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:01:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:01:40 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:02:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:02:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:02:01 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:02:12 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'RegionLocation'.
+ERROR - 2023-04-12 16:02:14 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near 'RegionLocation'.
+CRITICAL - 2023-04-12 16:07:13 --> syntax error, unexpected ':', expecting ')'
+in APPPATH\Models\JobModel.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(71): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 16:07:22 --> syntax error, unexpected '=', expecting ')'
+in APPPATH\Models\JobModel.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(71): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 16:09:30 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result_array()
+in APPPATH\Models\JobModel.php on line 12.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 16:12:39 --> Call to undefined method CodeIgniter\Database\SQLSRV\Connection::select()
+in APPPATH\Models\JobModel.php on line 11.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-12 16:21:33 --> Call to undefined method CodeIgniter\Database\SQLSRV\Result::result_array()
+in APPPATH\Models\JobModel.php on line 13.
+ 1 APPPATH\Controllers\Home.php(72): App\Models\JobModel->GetLocation()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-12 16:26:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:26:45 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+ERROR - 2023-04-12 16:27:00 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '.'.
+CRITICAL - 2023-04-12 16:36:10 --> Creating default object from empty value
+in APPPATH\Views\jobApplication.php on line 32.
+ 1 APPPATH\Views\jobApplication.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('jobApplication', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')

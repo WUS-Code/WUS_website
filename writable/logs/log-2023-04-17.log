@@ -1,0 +1,375 @@
+CRITICAL - 2023-04-17 12:01:47 --> syntax error, unexpected 'exit' (T_EXIT), expecting ';' or ','
+in APPPATH\Controllers\Home.php on line 84.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:01:58 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:02:19 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:04:44 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:05:28 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:05:49 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:06:42 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:09:05 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:09:45 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:16:31 --> Invalid argument supplied for foreach()
+in APPPATH\Views\internationalJobApplication.php on line 42.
+ 1 APPPATH\Views\internationalJobApplication.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\WUS-web\\app\\Views\\internationalJobApplication.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\WUS-web\\app\\Views\\internationalJobApplication.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('internationalJobApplication', [], true)
+ 5 APPPATH\Controllers\Home.php(95): view('internationalJobApplication', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:19:03 --> syntax error, unexpected 'json_decode' (T_STRING)
+in APPPATH\Controllers\Home.php on line 95.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:20:58 --> Illegal string offset 'Data'
+in APPPATH\Controllers\Home.php on line 95.
+ 1 APPPATH\Controllers\Home.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'Data\'', 'C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:21:10 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH\Controllers\Home.php on line 95.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:23:00 --> Illegal string offset 'Data'
+in APPPATH\Controllers\Home.php on line 96.
+ 1 APPPATH\Controllers\Home.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'Data\'', 'C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php', 96, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:23:27 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Home.php on line 97.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:24:27 --> syntax error, unexpected '$JsonData' (T_VARIABLE)
+in APPPATH\Controllers\Home.php on line 96.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:26:31 --> Cannot use object of type stdClass as array
+in APPPATH\Views\internationalJobApplication.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('internationalJobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(98): view('internationalJobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:26:52 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\internationalJobApplication.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('internationalJobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(98): view('internationalJobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:27:05 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\internationalJobApplication.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('internationalJobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(98): view('internationalJobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:27:30 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\internationalJobApplication.php on line 43.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('internationalJobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(98): view('internationalJobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 12:30:36 --> Cannot use object of type stdClass as array
+in APPPATH\Views\internationalJobApplication.php on line 44.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('internationalJobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(98): view('internationalJobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:13:46 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:14:15 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:14:25 --> Constant expression contains invalid operations
+in APPPATH\Controllers\Home.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-17 13:14:49 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\Home.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:15:00 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:15:09 --> syntax error, unexpected '$curl' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:15:55 --> 6 : Could not resolve host: api
+in SYSTEMPATH\HTTP\CURLRequest.php on line 666.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('post', 'http://api/Master/GetWebMasterData')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(207): CodeIgniter\HTTP\CURLRequest->request('post', 'http://api/Master/GetWebMasterData', [...])
+ 5 APPPATH\Controllers\Home.php(85): CodeIgniter\HTTP\CURLRequest->post('/api/Master/GetWebMasterData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:17:48 --> 6 : Could not resolve host: api
+in SYSTEMPATH\HTTP\CURLRequest.php on line 666.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('post', 'http://api/Master/GetWebMasterData')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(207): CodeIgniter\HTTP\CURLRequest->request('post', 'http://api/Master/GetWebMasterData', [...])
+ 5 APPPATH\Controllers\Home.php(85): CodeIgniter\HTTP\CURLRequest->post('/api/Master/GetWebMasterData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:17:51 --> 6 : Could not resolve host: api
+in SYSTEMPATH\HTTP\CURLRequest.php on line 666.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('post', 'http://api/Master/GetWebMasterData')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(207): CodeIgniter\HTTP\CURLRequest->request('post', 'http://api/Master/GetWebMasterData', [...])
+ 5 APPPATH\Controllers\Home.php(106): CodeIgniter\HTTP\CURLRequest->post('/api/Master/GetWebMasterData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:18:18 --> 6 : Could not resolve host: api
+in SYSTEMPATH\HTTP\CURLRequest.php on line 666.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('post', 'http://api/Master/GetWebMasterData')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(207): CodeIgniter\HTTP\CURLRequest->request('post', 'http://api/Master/GetWebMasterData', [...])
+ 5 APPPATH\Controllers\Home.php(106): CodeIgniter\HTTP\CURLRequest->post('/api/Master/GetWebMasterData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:18:24 --> 6 : Could not resolve host: api
+in SYSTEMPATH\HTTP\CURLRequest.php on line 666.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('post', 'http://api/Master/GetWebMasterData')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(207): CodeIgniter\HTTP\CURLRequest->request('post', 'http://api/Master/GetWebMasterData', [...])
+ 5 APPPATH\Controllers\Home.php(106): CodeIgniter\HTTP\CURLRequest->post('/api/Master/GetWebMasterData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->internationalJobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:19:04 --> 6 : Could not resolve host: api
+in SYSTEMPATH\HTTP\CURLRequest.php on line 666.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('post', 'http://api/Master/GetWebMasterData')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(207): CodeIgniter\HTTP\CURLRequest->request('post', 'http://api/Master/GetWebMasterData', [...])
+ 5 APPPATH\Controllers\Home.php(85): CodeIgniter\HTTP\CURLRequest->post('/api/Master/GetWebMasterData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:19:11 --> 6 : Could not resolve host: api
+in SYSTEMPATH\HTTP\CURLRequest.php on line 666.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(666): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('6', 'Could not resolve host: api')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(372): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(134): CodeIgniter\HTTP\CURLRequest->send('post', 'http://api/Master/GetWebMasterData')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(207): CodeIgniter\HTTP\CURLRequest->request('post', 'http://api/Master/GetWebMasterData', [...])
+ 5 APPPATH\Controllers\Home.php(85): CodeIgniter\HTTP\CURLRequest->post('/api/Master/GetWebMasterData', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 13:55:46 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\LMS.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-17 13:56:06 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\LMS.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-17 13:57:11 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\LMS.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-17 13:57:39 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\LMS.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-17 13:57:50 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\LMS.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-17 13:59:16 --> Cannot use empty array elements in arrays
+in APPPATH\Controllers\LMS.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-17 14:00:17 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LMS.php on line 81.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 14:01:41 --> syntax error, unexpected 'else' (T_ELSE)
+in APPPATH\Controllers\LMS.php on line 104.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\LMS.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LMS')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LMS')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\LMS')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\LMS', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-17 14:03:10 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\LMS.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')

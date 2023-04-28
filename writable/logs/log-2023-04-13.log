@@ -1,0 +1,362 @@
+CRITICAL - 2023-04-13 03:15:06 --> Cannot use object of type stdClass as array
+in APPPATH\Views\jobApplication.php on line 17.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(75): view('jobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 03:16:24 --> syntax error, unexpected end of file
+in APPPATH\Views\jobApplication.php on line 102.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 3 APPPATH\Controllers\Home.php(75): view('jobApplication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 04:59:49 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Home.php on line 104.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:01:00 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Home.php on line 106.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:01:21 --> Call to a member function flashdata() on null
+in APPPATH\Views\jobApplication.php on line 20.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(75): view('jobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:01:49 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\jobApplication.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-04-13 05:02:17 --> Call to undefined function validation_errors()
+in APPPATH\Views\jobApplication.php on line 75.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(75): view('jobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:05:02 --> Call to a member function set_flashdata() on null
+in APPPATH\Controllers\Home.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:28:51 --> Invalid argument supplied for foreach()
+in APPPATH\Views\jobApplication.php on line 33.
+ 1 APPPATH\Views\jobApplication.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 5 APPPATH\Controllers\Home.php(92): view('jobApplication', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:35:04 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:41:28 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Models\JobModel.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(91): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:42:09 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Models\JobModel.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(91): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:42:54 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Models\JobModel.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(91): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:43:34 --> syntax error, unexpected ';', expecting ']'
+in APPPATH\Models\JobModel.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(91): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:43:44 --> syntax error, unexpected 'echo' (T_ECHO), expecting ']'
+in APPPATH\Models\JobModel.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Models\\JobModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\JobModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\JobModel')
+ 4 APPPATH\Controllers\Home.php(91): spl_autoload_call('App\\Models\\JobModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-13 05:46:55 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type nvarchar to int.
+CRITICAL - 2023-04-13 05:46:55 --> Call to a member function getResult() on bool
+in APPPATH\Models\JobModel.php on line 28.
+ 1 APPPATH\Controllers\Home.php(99): App\Models\JobModel->AddJobApplication([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-13 05:47:43 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type nvarchar to int.
+CRITICAL - 2023-04-13 05:47:43 --> Call to a member function getResult() on bool
+in APPPATH\Models\JobModel.php on line 28.
+ 1 APPPATH\Controllers\Home.php(99): App\Models\JobModel->AddJobApplication([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:55:40 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 93.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:55:52 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::post()
+in APPPATH\Controllers\Home.php on line 93.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 05:58:30 --> Call to a member function Post() on null
+in APPPATH\Controllers\Home.php on line 93.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 06:00:38 --> Call to a member function post() on null
+in APPPATH\Controllers\Home.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 06:00:44 --> Call to a member function getpost() on null
+in APPPATH\Controllers\Home.php on line 90.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 06:05:12 --> Invalid argument supplied for foreach()
+in APPPATH\Views\jobApplication.php on line 33.
+ 1 APPPATH\Views\jobApplication.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php', 33, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\WUS-web\\app\\Views\\jobApplication.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 5 APPPATH\Controllers\Home.php(106): view('jobApplication', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 06:13:32 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddJobApplication()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 06:22:48 --> Call to a member function getError() on null
+in APPPATH\Views\jobApplication.php on line 63.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jobApplication', [], true)
+ 4 APPPATH\Controllers\Home.php(75): view('jobApplication', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->jobApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-13 06:40:36 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type nvarchar to int.
+CRITICAL - 2023-04-13 06:40:36 --> Call to a member function getResult() on bool
+in APPPATH\Models\JobModel.php on line 34.
+ 1 APPPATH\Controllers\Home.php(168): App\Models\JobModel->AddJobApplication([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->AddInternationJobApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 10:15:58 --> "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('mobile', 'mobile', '9904930000', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\LMS.php(13): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-13 10:16:22 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '0'.
+CRITICAL - 2023-04-13 10:16:22 --> Call to a member function getResult() on bool
+in APPPATH\Models\LMSModel.php on line 19.
+ 1 APPPATH\Controllers\LMS.php(55): App\Models\LMSModel->AddCyberApplication([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-13 10:16:48 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '0'.
+CRITICAL - 2023-04-13 10:16:48 --> Call to a member function getResult() on bool
+in APPPATH\Models\LMSModel.php on line 19.
+ 1 APPPATH\Controllers\LMS.php(55): App\Models\LMSModel->AddCyberApplication([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-13 10:17:08 --> [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '0'.
+CRITICAL - 2023-04-13 10:17:08 --> Call to a member function getResult() on bool
+in APPPATH\Models\LMSModel.php on line 19.
+ 1 APPPATH\Controllers\LMS.php(55): App\Models\LMSModel->AddCyberApplication([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:03:07 --> syntax error, unexpected '}'
+in APPPATH\Controllers\LMS.php on line 120.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\LMS.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LMS')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LMS')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\LMS')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\LMS', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:03:31 --> A non-numeric value encountered
+in APPPATH\Controllers\LMS.php on line 94.
+ 1 APPPATH\Controllers\LMS.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\xampp\\htdocs\\WUS-web\\app\\Controllers\\LMS.php', 94, [...])
+ 2 APPPATH\Controllers\LMS.php(61): App\Controllers\LMS->send_registration_mail('ruchidogra50@gmail.com', 'Cyber')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:04:30 --> Call to a member function library() on null
+in APPPATH\Controllers\LMS.php on line 113.
+ 1 APPPATH\Controllers\LMS.php(61): App\Controllers\LMS->send_registration_mail('ruchidogra50@gmail.com', 'Cyber')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:05:19 --> Call to a member function library() on null
+in APPPATH\Controllers\LMS.php on line 113.
+ 1 APPPATH\Controllers\LMS.php(61): App\Controllers\LMS->send_registration_mail('ruchidogra50@gmail.com', 'Cyber')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:07:01 --> Cannot call constructor
+in APPPATH\Controllers\LMS.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\LMS->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:07:45 --> Call to a member function library() on null
+in APPPATH\Controllers\LMS.php on line 114.
+ 1 APPPATH\Controllers\LMS.php(62): App\Controllers\LMS->send_registration_mail('ruchidogra50@gmail.com', 'Cyber')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:09:23 --> Call to a member function library() on null
+in APPPATH\Controllers\LMS.php on line 114.
+ 1 APPPATH\Controllers\LMS.php(62): App\Controllers\LMS->send_registration_mail('ruchidogra50@gmail.com', 'Cyber')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+CRITICAL - 2023-04-13 11:10:29 --> Call to a member function library() on null
+in APPPATH\Controllers\LMS.php on line 104.
+ 1 APPPATH\Controllers\LMS.php(62): App\Controllers\LMS->send_registration_mail('ruchidogra50@gmail.com', 'Cyber')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\WUS-web\\public\\index.php')
+ERROR - 2023-04-13 11:21:58 --> Email: sendWithMail throwed ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Email\Email.php:1735
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed ...', 'C:\\xampp\\htdocs...', 1735, Array)
+#1 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Email\Email.php(1735): mail('ruchidogra50@gm...', '=?UTF-8?Q?Suces...', '<table><tr><th ...', 'Date: Thu, 13 A...', '-f ruchidogra50...')
+#2 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithMail()
+#3 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#4 C:\xampp\htdocs\WUS-web\app\Controllers\LMS.php(108): CodeIgniter\Email\Email->send()
+#5 C:\xampp\htdocs\WUS-web\app\Controllers\LMS.php(62): App\Controllers\LMS->send_registration_mail('ruchidogra50@gm...', 'Cyber')
+#6 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\LMS->AddCyberApplication()
+#7 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LMS))
+#8 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\WUS-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\WUS-web\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2023-04-13 11:21:58 --> Email: Unable to send email using PHP mail(). Your server might not be configured to send mail using this method.
+ERROR - 2023-04-13 11:21:58 --> 
